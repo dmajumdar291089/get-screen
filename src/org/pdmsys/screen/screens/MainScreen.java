@@ -16,7 +16,7 @@ import javax.swing.JMenuItem;
 import org.pdmsys.screen.constants.Constants;
 
 /**
- * @author Dipankar
+ * @author dipankar
  *
  */
 public class MainScreen extends JFrame {
@@ -24,24 +24,24 @@ public class MainScreen extends JFrame {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -350810197750222920L;
-
-	JMenuBar menuBar;
-	JLabel label;
-	JMenu start;
-	JMenu end;
-	JMenuItem process;
-	JMenuItem exit;
-	SetLocation setLocation;
+	private static final long serialVersionUID = 8299728555097538533L;
 	
-	private static MainScreen mainScreen = new MainScreen( );
+	private JMenuBar menuBar;
+	private JLabel label;
+	private JMenu start;
+	private JMenu end;
+	private JMenuItem process;
+	private JMenuItem exit;
+	private SetLocation setLocation;
+	
+	private static MainScreen mainScreen = new MainScreen();
 
 	private MainScreen() {
 		initUI();
 	}
 	
 	/* Static 'instance' method */
-	public static MainScreen getInstance( ) {
+	public static MainScreen getInstance() {
 		return mainScreen;
 	}
 
@@ -78,10 +78,10 @@ public class MainScreen extends JFrame {
 		menuBar.add(end);
 
 		setVisible(true);
-		setSize(900, 700);
+		setSize(500, 170);
 		setTitle(Constants.APP_TITLE);
 		setJMenuBar(menuBar);
-		setResizable(false);
+		//setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		exit.setToolTipText(Constants.EXIT_APP);
@@ -99,7 +99,8 @@ public class MainScreen extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent event) {
-				setLocation = new SetLocation();
+				setSize(500, 170);
+				setLocation = SetLocation.getInstance();
 				setContentPane(setLocation);
 				setTitle(Constants.APP_TITLE);
 				revalidate();
