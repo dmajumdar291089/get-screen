@@ -9,6 +9,7 @@ import org.pdmsys.screen.screens.MainScreen;
 public class Launcher {
 	
 	public static void main(String[] args) {
+		//Entry point
 		MainScreen.getInstance();
 	}
 	
