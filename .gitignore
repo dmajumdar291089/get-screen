@@ -1,0 +1,14 @@
+bin/.DS_Store
+bin/org/pdmsys/screen/constants/Constants.class
+bin/org/pdmsys/screen/launcher/Launcher.class
+bin/org/pdmsys/screen/screens/CaptureScreen.class
+bin/org/pdmsys/screen/screens/CaptureScreen$1.class
+bin/org/pdmsys/screen/screens/MainScreen.class
+bin/org/pdmsys/screen/screens/MainScreen$1.class
+bin/org/pdmsys/screen/screens/MainScreen$2.class
+bin/org/pdmsys/screen/screens/SetLocation.class
+bin/org/pdmsys/screen/screens/SetLocation$1.class
+bin/org/pdmsys/screen/screens/SetLocation$2.class
+bin/org/.DS_Store
+bin/org/pdmsys/.DS_Store
+bin/org/pdmsys/screen/.DS_Store
